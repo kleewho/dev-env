@@ -9,4 +9,4 @@ version          '0.0.1'
 supports 'ubuntu'
 
 depends 'java'
-depends 'ark'
+depends 'maven'
