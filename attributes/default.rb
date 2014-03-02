@@ -30,3 +30,5 @@ default['dev-env']['vagrant']['windows']['msi_version'] = "1.4.3"
 
 default['vagrant']['url'] = "#{node['dev-env']['vagrant']['ubuntu32']['url']}"
 default['vagrant']['checksum'] = "#{node['dev-env']['vagrant']['ubuntu32']['checksum']}"
+
+default['virtualbox']['version'] = "4.3"
