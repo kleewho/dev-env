@@ -10,3 +10,4 @@ supports 'ubuntu'
 
 depends 'java'
 depends 'maven'
+depends 'vagrant'
