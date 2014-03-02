@@ -1,6 +1,28 @@
 default['dev-env']['directory'] = "/opt"
 default['dev-env']['user'] = "vagrant"
+
 default['dev-env']['vagrantfile']['directory'] = "/home/#{node['dev-env']['user']}/vagrant"
+
+default['dev-env']['liberty-global']['projects'] = ["customer-api",
+                                                    "customer-api-acceptance-tests",
+                                                    "customer-api-adapter-client",
+                                                    "customer-api-adapter-model",
+                                                    "customer-api-dropwizard-adapter",
+                                                    "customer-integration",
+                                                    "epg-importer-dropwizard",
+                                                    "infrastructure",
+                                                    "kraken-domain",
+                                                    "peal-client",
+                                                    "schedule-api-v1",
+                                                    "schedule-api-v2",
+                                                    "schedule-api-v2-dropwizard",
+                                                    "social-api-client",
+                                                    "social-api-dropwizard",
+                                                    "social-api-model",
+                                                    "tentacle"]
+default['dev-env']['liberty-global']['directory'] = "/home/#{node['dev-env']['user']}/projects"
+default['dev-env']['liberty-global']['url'] = "git@github.com:LibertyGlobal"
+
 
 default['java']['oracle']['accept_oracle_download_terms'] = true
 default['java']['java_home'] = "#{node['dev-env']['directory']}/jdk"
