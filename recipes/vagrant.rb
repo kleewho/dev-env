@@ -1,11 +1,11 @@
-include_recipe "vagrant"
+include_recipe 'vagrant'
 
 case node['platform_family']
-when "debian"
+when 'debian'
   package "linux-headers-#{node['kernel']['release']}"
 end
 
-include_recipe "virtualbox"
+include_recipe 'virtualbox'
 
 user = node['dev-env']['user']
 vagrantfile_d = "#{node['dev-env']['vagrantfile']['directory']}"
@@ -18,7 +18,7 @@ unless ::File.exists?(vagrantfile_d)
 end
 
 cookbook_file "#{vagrantfile_d}/Vagrantfile" do
-  source "Vagrantfile"
+  source 'Vagrantfile'
   owner user
   group user
   mode 0644

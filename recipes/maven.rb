@@ -1,1 +1,1 @@
-include_recipe "maven"
+include_recipe 'maven'

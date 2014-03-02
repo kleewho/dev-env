@@ -1,4 +1,4 @@
-include_recipe "git"
+include_recipe 'git'
 
 user = node['dev-env']['user']
 projects_d = node['dev-env']['liberty-global']['directory']
@@ -14,7 +14,7 @@ end
 node['dev-env']['liberty-global']['projects'].each do |repo|
   git repo do
     repository "#{node['dev-env']['liberty-global']['url']}/#{repo}.git"
-    revision "master"
+    revision 'master'
     user user
     group user
     destination "#{projects_d}/#{repo}"
