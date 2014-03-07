@@ -1,4 +1,5 @@
 default['dev-env']['directory'] = "/opt"
+default['dev-env']['user'] = "vagrant"
 
 default['java']['oracle']['accept_oracle_download_terms'] = true
 default['java']['java_home'] = "#{node['dev-env']['directory']}/jdk"
