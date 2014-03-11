@@ -1,5 +1,5 @@
 user = node['dev-env']['user']
-idea_d = "/home/#{user}/.m2/"
+idea_d = node['idea']['setup_dir']
 
 unless ::File.exists?(idea_d)
   Chef::Log.info "Creating #{idea_d}"

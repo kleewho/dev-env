@@ -25,7 +25,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     box.vm.network :hostonly, "10.0.0.3"
   end
   config.vm.define :m1 do |box|
-    box.vm.customize ["modifyvm", :id, "--memory", 1740]
+    box.vm.customize ["modifyvm", :id, "--memory", 3480]
     box.vm.network :hostonly, "10.0.0.4"
   end
   config.vm.define :m2 do |box|
