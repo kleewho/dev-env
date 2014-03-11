@@ -12,8 +12,19 @@ What it do?
 
 It installs:
 * jdk
+* maven
+* vagrant
+* virtualbox
+* git
+* ruby with bundler
+* intellij idea
 
 Dependencies
 ------------
 
+Cookbooks:
 * java
+* maven
+* git
+* virtualbox
+* idea
