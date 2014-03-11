@@ -1,0 +1,17 @@
+{
+    "run_list": [
+        "dev-env"
+    ],
+    "dev-env": {
+        "user": "vagrant",
+        "vagrantfile": {
+            "directory": "/home/vagrant/vagrant"
+        },
+        "liberty-global": {
+            "directory": "/home/vagrant/projects"
+        }
+    },
+    "idea": {
+        "setup_dir": "/home/vagrant/idea"
+    }
+}
