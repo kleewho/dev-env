@@ -8,7 +8,7 @@ Usage
 
 download [`dev-env.json`](https://github.com/kleewho/dev-env/releases/download/v0.1.0/dev-env.json) modify it as suitable
 
-download [`run.sh`](from https://github.com/kleewho/dev-env/releases/download/v0.1.0/run.sh) make executable and run, e.g:
+download [`run.sh`](https://github.com/kleewho/dev-env/releases/download/v0.1.0/run.sh) make executable and run, e.g:
 
     sudo ./run.sh -r https://github.com/kleewho/dev-env/releases/download/v0.1.0/package.tgz
 
