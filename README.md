@@ -6,11 +6,15 @@ Simple cookbook to kickstart newcomers to the project
 Usage
 -----
 
-download [`dev-env.json`](https://github.com/kleewho/dev-env/releases/download/v0.1.0/dev-env.json) modify it as suitable
+download [`dev-env.json`](https://github.com/kleewho/dev-env/releases/download/v0.1.0/dev-env.json) and **modify** it as suitable
 
-download [`run.sh`](https://github.com/kleewho/dev-env/releases/download/v0.1.0/run.sh) make executable and run, e.g:
+download [`run.sh`](https://github.com/kleewho/dev-env/releases/download/v0.1.0/run.sh) and make executable and run:
 
     sudo ./run.sh -r https://github.com/kleewho/dev-env/releases/download/v0.1.0/package.tgz
+    
+To see all options run just:
+
+    ./run.sh -h
 
 
 Supported platforms
